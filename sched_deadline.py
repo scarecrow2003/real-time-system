@@ -45,8 +45,7 @@ def sched_deadline(env, tasks):
 def run_task(task):
     start = task.env.now
     print(task.name, ' starts to run at ', start)
-    time_to_run = task.remaining_execution_time if task.remaining_runtime >= task.remaining_execution_time else task.remaining_runtime
-    print(task.name, ' runs for a period of ', time_to_run)
+    time_to_run = 1
     yield task.env.timeout(time_to_run)
     task.remaining_runtime -= time_to_run
     task.remaining_execution_time -= time_to_run

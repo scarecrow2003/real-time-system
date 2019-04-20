@@ -13,15 +13,3 @@ class Task(object):
         self.deadline = period
         self.next_deliver_time = period
 
-    # def run(self, finish):
-    #     start = self.env.now()
-    #     print(self.name, ' starts to run at', start)
-    #     time_to_run = self.remaining_execution_time if self.remaining_runtime >= self.remaining_execution_time else self.remaining_runtime
-    #     yield self.env.timeout(time_to_run)
-    #     self.remaining_runtime -= time_to_run
-    #     self.remaining_execution_time -= time_to_run
-    #     if self.remaining_execution_time == 0 & self.env.now() > self.deadline:
-    #         print('missed deadline')
-    #         finish.fail()
-    #     else:
-    #         finish.succeed()
