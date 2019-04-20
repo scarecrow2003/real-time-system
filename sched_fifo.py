@@ -4,6 +4,7 @@ import math
 from queue import Queue
 from task import Task
 
+
 def sched_fifo(env, tasks):
     print('start to schedule tasks')
     missed_deadline = 0

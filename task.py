@@ -1,6 +1,3 @@
-import simpy
-
-
 class Task(object):
     def __init__(self, env, name, execution_time, runtime, period):
         self.env = env

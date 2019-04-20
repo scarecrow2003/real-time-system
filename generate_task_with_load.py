@@ -10,6 +10,7 @@ current_load = 0
 with open('tasks.csv', 'w') as csvFile:
     writer = csv.writer(csvFile)
     while True:
+        # generate random string task name
         name = 'task_' + \
             ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         # generate random execution time
